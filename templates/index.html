@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iris Flower Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        label {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Predict Iris Flower Species</h1>
+    <form action="/predict" method="post">
+        <div class="form-group">
+            <label for="sepal_length">Sepal Length:</label>
+            <input type="number" step="any" id="sepal_length" name="sepal_length" required>
+        </div>
+        <div class="form-group">
+            <label for="sepal_width">Sepal Width:</label>
+            <input type="number" step="any" id="sepal_width" name="sepal_width" required>
+        </div>
+        <div class="form-group">
+            <label for="petal_length">Petal Length:</label>
+            <input type="number" step="any" id="petal_length" name="petal_length" required>
+        </div>
+        <div class="form-group">
+            <label for="petal_width">Petal Width:</label>
+            <input type="number" step="any" id="petal_width" name="petal_width" required>
+        </div>
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+</html>

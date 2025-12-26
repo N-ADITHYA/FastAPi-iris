@@ -15,6 +15,7 @@ Random Forest classifier has been used for training on the most popular Iris dat
 
 Here instead of using the default swagger UI of FastAPI, Jinja2templates has been used which allows us to build a proper web interface using HTML files, enabling us to customize various components of the webpage.
 
+
 1. Initiate Jinja2Templates by providing it the directory where HTML files will be. 
 2. Define an asynchronous route that serves the "index.html" template as an HTML response for the root URL ("/").
 3. Making changes to the input argument of the `predict` function using Request and Form. 
